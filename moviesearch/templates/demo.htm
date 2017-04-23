@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ckplayer简单调用演示</title>
+
+</head>
+
+<body>
+
+
+<div id="a1"></div>
+{% load static %}
+<script type="text/javascript" src="{% static "ckplayer/ckplayer.js" %}" charset="utf-8"></script>
+<script type="text/javascript">
+function player(){
+			var flashvars={f:'http://v1.365yg.com/f2e0f7719668e835264fa73ca6526394/58f20285/video/m/22038112bb2434a464380f3e7bd088f1585114574e000017abb4dd299e/',c:0,loaded:'loadedHandler',p:1};
+		var params={bgcolor:'#FFF',allowFullScreen:true,allowScriptAccess:'always',wmode:'transparent'};
+		CKobject.embedSWF('https://vs.6no.cc/player/player.swf','a1','ckplayer_a1','100%','460px',flashvars,params);
+		var video=['http://v1.365yg.com/f2e0f7719668e835264fa73ca6526394/58f20285/video/m/22038112bb2434a464380f3e7bd088f1585114574e000017abb4dd299e/'];
+			var support=['iPad','iPhone','ios','android+false','msie10+false'];
+		CKobject.embedHTML5('a1','ckplayer_a1','100%','230px',video,flashvars,support);
+}
+player();
+  </script>
+</body>
+
+<h1></h1>
+</html>

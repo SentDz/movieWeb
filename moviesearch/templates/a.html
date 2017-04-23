@@ -1,0 +1,36 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    {% load static %}
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{{ title }}</title>
+<meta name="keywords" content="{{ keywords }}" />
+<meta name="description" content="{{ description }}" />
+<meta name="applicable-device" content="pc">
+<link href="{% static "home.css" %}" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+<div class="homenav">
+
+</div>
+
+<h1 class="home_logo"><img src="http://img2.imgtn.bdimg.com/it/u=819201812,3553302270&fm=214&gp=0.jpg" alt="网盘搜索"/></h1>
+<div class="searchbox">
+    <form action="/search" method="get" >
+    <input align="middle" name="q" class="q" id="kw" autocomplete="off" baiduSug="1" onfocus="javascript:if(this.value==''){this.value='';this.style.borderColor='#00a9f6';}" onblur="javascript:if(this.value==''){this.value='';this.style.borderColor='#CFC7C7';}" x-webkit-speech />
+
+        <input id="btn" class="btn" align="middle" value="搜索" type="submit" />
+    </form>
+</div>
+<div class="hotsearchs">
+        <a href="/search?q=泰迪熊">泰迪熊</a>
+        <a href="/search?q=速度与激情7">速度与激情7</a>
+        <a href="/search?q=西游伏妖篇">西游伏妖篇</a>
+    <a href="/search?q=大闹天竺">大闹天竺</a>
+    <a href="/search?q=乘风破浪">乘风破浪</a>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+/* CSS Document */
+
+/*首页*/
+.homenav{position:relative;height:30px;line-height:30px; padding-top:13px; margin-right:10px;overflow:hidden;float:right}
+.homenav .nav a{ font-size:13px;display:inline-block;height:27px; line-height:27px;padding:0 11px;margin:0 18px;color:#000;margin-left:10px;font-weight:bold}
+.homenav a.current{background:#00a9f6;color:#ffffff;text-decoration:none;}
+
+.home_logo{width:100%; text-align:center;padding-bottom:20px;padding-top:100px;}
+.home_logo img{ width:240px; height:60px}
+
+body{margin:0;padding:0;border:0;}
+body,textarea{font:13px arial,sans-serif}
+a{text-decoration:none;outline:0;color:#36b}
+
+.searchbox{ height:40px; width:630px; margin:0 auto;clear:both;position:relative; overflow:hidden;top:15px}
+.searchbox .q{width:520px;height:20px;padding:9px 7px;padding:11px 7px 7px\9;font:16px arial;border:1px solid #b8b8b8;vertical-align:top;outline:none}
+.searchbox .btn{ height:40px; line-height:40px;border:none; -moz-border-radius:0;-webkit-border-radius:0;border-radius:0;-webkit-appearance:none;-moz-appearance:none;color:#ffffff; font-size:16px; position:absolute; top:0px; right:0px;border-left:1px solid #00a9f6;background-color:#00a9f6;WIDTH:95px;}
+.hotsearchs { text-align:center; margin-top:28px}
+.hotsearchs a{padding:6px 10px;margin:2px;border:1px solid #d8d8d8;color:#878787;-moz-border-radius:5px; -webkit-border-radius:5px;border-radius:5px;display:inline-block;font-size:13px;}
+.hotsearchs a:hover{text-decoration:none;border:1px solid #00a0f0;color:#00a0f0;}
+
+
+*{margin:0; padding:0;}
+.cl{clear:both; overflow:hidden; height:0px;}
+.cl5{clear:both; overflow:hidden; height:5px;}
+.cl8{clear:both; overflow:hidden; height:8px;}
+.cl10{clear:both; overflow:hidden; height:10px;}
+.hidden{display:none}
+.hotsearch{ clear:both; width:360px; margin:0 auto 15px auto;background-color:#FFF; }
+.hotsearch .hothead{ height:32px; background-color:#fff;}
+.hotsearch .hothead a{ display:inline-block; float:left; height:32px; width:100px; text-align:center; line-height:32px;font-size:14px; color:#444444;}
+.hotsearch .hothead a:hover{ text-decoration:none;}
+.hotsearch .hothead a.current{ background-color:#FFFFFF; height:32px; color:#00a9f6; font-weight:bold}
+.hotsearch ul{padding:1px 10px 10px 10px;}
+.hotsearch li{ height:24px;line-height:24px; width:160px;_width:155px; margin:5px 0px 0px 10px; display:inline-block; float:left; overflow:hidden;}
+.hotsearch li a{ color:#444444; font-size:14px; display:inline-block; float:left;margin-left:5px;  width:140px; overflow:hidden;}
+.hotsearch li a:hover{text-decoration:none; color:#009af8;}
+.hotsearch li .num{ display:inline-block; float:left; width:15px; height:15px; margin-top:4px; background-color:#609; line-height:15px; text-align:center; color:#FFF; font-size:12px;}
+.hotsearch li .top1{ background-color:#fa9a43;}
+.hotsearch li .top2{ background-color:#a8a8a8;}
+
+#card_container{height:280px;position:relative;width:671px;top:10px; margin:0 auto}
+#card_container h3{color:#00be3c;font-size:14px}
+#card_container .img-card{float:left;height:280px;position:relative;width:336px;}
+#card_container .right-wrap{height:280px;position:absolute;right:-1px;top:0;width:336px;}
+
+.bdsug_copy{ display:none;}
+
+#foot{background:#ffffff;border-top:1px solid #ebebeb;text-align:left;height:30px;line-height:30px;position: fixed;_position: absolute;bottom: 0;width: 100%;clear: both;}
+#foot span{color:#999}
+#foot .foot_c{float:left;padding:0 0 0 2px}
+#help{background:#ffffff;zoom:1;padding:0 0 0 50px;float:right}
+#help a{color:#777;padding:0 5px;text-decoration:none; color:#999}

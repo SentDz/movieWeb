@@ -1,0 +1,49 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+        {% load static %}
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{{ key }} - 草榴电影搜索</title>
+<meta name="keywords" content="{{ key }}"/>
+<meta name="description" content="{{ key }}在线观看" />
+<meta name="applicable-device" content="pc">
+<link href="{% static "style.css" %}" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+<div id="header">
+  <div class="s">
+      <a href="http://www.pansoso.com/" title="网盘搜索"><div class="logo png"></div></a>
+      <div class="searchbox">
+       <form action="/search" method="get" >
+           <input align="middle" name="q" class="q" id="kw" value="{{ key }}" autocomplete="off" baiduSug="1" x-webkit-speech/>
+           <input id="btn" class="btn" align="middle" value="搜搜一下" type="submit" />
+              </form>
+      </div>
+  </div>
+</div>
+
+<div id="topnav">
+<span class="nav">
+		<a class='current' onclick='return false;'>全部电影</a>
+  </span></div>
+<!-- google_ad_section_start -->
+<div id="p_main">
+<div id="con" class="con">
+<div id="contentinfo">关于 <h1>{{ key }}</h1> 的资源:</div>
+      {% for athlete in movies %}
+            <div style="margin-bottom: 15px">
+                <h2 style="font-size: 18px;color:#ee0000; font-weight:normal">
+                 <a href="look?url={{ athlete.url }}" target="_blank" rel="nofollow" >
+                <b>{{ athlete.title }}</b></a>
+                </h2>
+                <div style="font-size: 6px;color:#7E7E7E;margin-bottom: 5px">{{ athlete.auth }}   {{ athlete.type }}</div>
+                <div class="des">{{ athlete.desc }}</div>
+            </div>
+        {% endfor %}
+</div>
+</div>
+</body>
+</html>
